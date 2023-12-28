@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Axis Systems Information Technology Co.</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Favicon -->
+    <link href="img/logo2.png" rel="icon" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <style media="screen">
+      .portfolio {
+        position: relative;
+        padding: 30px 0 60px 0;
+        background: #f2f2f2;
+      }
+
+      .portfolio .portfolio-item {
+        margin-bottom: 30px;
+        overflow: hidden;
+      }
+
+      .portfolio .portfolio-item .portfolio-img {
+        position: relative;
+        background: #000000;
+        overflow: hidden;
+      }
+
+      .portfolio .portfolio-item .link-preview,
+      .portfolio .portfolio-item .link-details {
+        position: absolute;
+        display: inline-block;
+        padding: 5px 0;
+        line-height: 1;
+        text-align: center;
+        width: 45px;
+        height: 35px;
+        background: #4f84c4;
+        border: 1px solid #ffffff;
+        transition: 0.3s;
+        opacity: 0;
+      }
+
+      .portfolio .portfolio-item .link-preview i,
+      .portfolio .portfolio-item .link-details i {
+        font-size: 22px;
+        color: #ffffff;
+      }
+
+      .portfolio .portfolio-item .link-preview:hover,
+      .portfolio .portfolio-item .link-details:hover {
+        background: #ffffff;
+        border: 1px solid #4f84c4;
+      }
+
+      .portfolio .portfolio-item .link-preview:hover i,
+      .portfolio .portfolio-item .link-details:hover i {
+        color: #353535;
+      }
+
+      .portfolio .portfolio-item .link-preview {
+        left: 0;
+        top: calc(50% - 18px);
+      }
+
+      .portfolio .portfolio-item .link-details {
+        right: 0;
+        top: calc(50% - 18px);
+      }
+
+      .portfolio .portfolio-item:hover .link-preview {
+        opacity: 1;
+        left: calc(50% - 50px);
+      }
+
+      .portfolio .portfolio-item:hover .link-details {
+        opacity: 1;
+        right: calc(50% - 50px);
+      }
+
+      .portfolio .portfolio-item .portfolio-info {
+        position: relative;
+        width: 100%;
+        padding: 30px 15px;
+        text-align: center;
+        background: #ffffff;
+      }
+
+      .portfolio .portfolio-item .portfolio-info h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .portfolio .portfolio-item .portfolio-info p {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    </style>
+    <!-- Nav Start -->
+    <div id="nav">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarCollapse"
+          >
+            <div class="navbar-nav ml-auto">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="about.html" class="nav-item nav-link">About Us </a>
+              <a href="Service.html" class="nav-item nav-link">Services</a>
+              <a href="portfolio.html" class="nav-item nav-link"
+                >Bussiness Enquiry</a
+              >
+              <a href="Clients.html" class="nav-item nav-link"
+                >Clients & Partners</a
+              >
+
+              <a href="pricing.html" class="nav-item nav-link">Portfolio</a>
+              <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Nav End -->
+
+    <!-- Portfolio Start -->
+    <div class="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Portfolio</h2>
+          <p>Websites</p>
+        </div>
+
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-img">
+              <img
+                src="img/portfolio/1.jpg"
+                class="img-fluid"
+                alt="Portfolio"
+              />
+              <a
+                href="img/portfolio/1.jpg"
+                data-lightbox="portfolio"
+                data-title="Lorem ipsum dolor"
+                class="link-preview"
+                title="Preview"
+                ><i class="ion-md-eye"></i
+              ></a>
+              <a href="" class="link-details" title="More Details"
+                ><i class="ion-md-open"></i
+              ></a>
+            </div>
+
+            <div class="portfolio-info">
+              <h3>Lorem ipsum dolor</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-img">
+              <img
+                src="img/portfolio/2.jpg"
+                class="img-fluid"
+                alt="Portfolio"
+              />
+              <a
+                href="img/portfolio/2.jpg"
+                class="link-preview"
+                data-lightbox="portfolio"
+                data-title="Nulla ullamcorper pharetra"
+                title="Preview"
+                ><i class="ion-md-eye"></i
+              ></a>
+              <a href="" class="link-details" title="More Details"
+                ><i class="ion-md-open"></i
+              ></a>
+            </div>
+
+            <div class="portfolio-info">
+              <h3>Nulla ullamcorper pharetra</h3>
+              <p>Web Development</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-img">
+              <img
+                src="img/portfolio/3.jpg"
+                class="img-fluid"
+                alt="Portfolio"
+              />
+              <a
+                href="img/portfolio/3.jpg"
+                class="link-preview"
+                data-lightbox="portfolio"
+                data-title="Phasellus eget dictum"
+                title="Preview"
+                ><i class="ion-md-eye"></i
+              ></a>
+              <a href="" class="link-details" title="More Details"
+                ><i class="ion-md-open"></i
+              ></a>
+            </div>
+
+            <div class="portfolio-info">
+              <h3>Phasellus eget dictum</h3>
+              <p>App Design</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-img">
+              <img
+                src="img/portfolio/4.jpg"
+                class="img-fluid"
+                alt="Portfolio"
+              />
+              <a
+                href="img/portfolio/4.jpg"
+                data-lightbox="portfolio"
+                data-title="Lorem ipsum dolor"
+                class="link-preview"
+                title="Preview"
+                ><i class="ion-md-eye"></i
+              ></a>
+              <a href="" class="link-details" title="More Details"
+                ><i class="ion-md-open"></i
+              ></a>
+            </div>
+
+            <div class="portfolio-info">
+              <h3>Donec mattis vestibulum</h3>
+              <p>App Development</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-img">
+              <img
+                src="img/portfolio/5.jpg"
+                class="img-fluid"
+                alt="Portfolio"
+              />
+              <a
+                href="img/portfolio/5.jpg"
+                class="link-preview"
+                data-lightbox="portfolio"
+                data-title="Nulla ullamcorper pharetra"
+                title="Preview"
+                ><i class="ion-md-eye"></i
+              ></a>
+              <a href="" class="link-details" title="More Details"
+                ><i class="ion-md-open"></i
+              ></a>
+            </div>
+
+            <div class="portfolio-info">
+              <h3>Pellentesque ullamcorper</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-img">
+              <img
+                src="img/portfolio/6.jpg"
+                class="img-fluid"
+                alt="Portfolio"
+              />
+              <a
+                href="img/portfolio/6.jpg"
+                class="link-preview"
+                data-lightbox="portfolio"
+                data-title="Phasellus eget dictum"
+                title="Preview"
+                ><i class="ion-md-eye"></i
+              ></a>
+              <a href="" class="link-details" title="More Details"
+                ><i class="ion-md-open"></i
+              ></a>
+            </div>
+
+            <div class="portfolio-info">
+              <h3>Sed pretium sapien</h3>
+              <p>Web Development</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-img">
+              <img
+                src="img/portfolio/7.jpg"
+                class="img-fluid"
+                alt="Portfolio"
+              />
+              <a
+                href="img/portfolio/7.jpg"
+                class="link-preview"
+                data-lightbox="portfolio"
+                data-title="Nulla ullamcorper pharetra"
+                title="Preview"
+                ><i class="ion-md-eye"></i
+              ></a>
+              <a href="" class="link-details" title="More Details"
+                ><i class="ion-md-open"></i
+              ></a>
+            </div>
+
+            <div class="portfolio-info">
+              <h3>Pellentesque ullamcorper</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Footer section -->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>IT Solutions <span>Information Technology</span></h3>
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact Us</a>
+        </p>
+        <br /><br /><br />
+        <p class="footer-company-name">© 2023 IT Solutions</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>
+            <span>IT Solutions Est.</span>Location :(9th & 10th Street),
+            <br />P.O Box: 74325 Pune, Postcode: 411018 <br />
+            Pune Maharashtra.
+          </p>
+        </div>
+        <br />
+        <br />
+        <div>
+          <i class="fa fa-phone"></i>
+          <br />
+          <p>Tel :+91 9999999900</p>
+          <br />
+          <p>Fax: +91 9999999900</p>
+
+          <br />
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="info@axisitsystems.com">E-mail: info@Itsolutions.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          We are a IT support company, giving businesses operating in the
+          eastern province area of Saudi Arabia support solutions that are
+          tailored to each individual client’s needs.We have a commitment to the
+          highest levels of customer service, which forms our company values of
+          delivering IT solutions with honesty and integrity.
+        </p>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+
+    <!-- Libraries JS -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Main Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+/**************************************/
+/************ General CSS *************/
+/**************************************/
+body {
+    font-family: "Raleway", sans-serif;
+    background: #ffffff;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+  }
+  
+  /* Add a meta tag for viewport scaling */
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  /* Common styles for links */
+  a {
+    color: #4f84c4;
+    transition: 0.3s;
+  }
+  
+  a:hover,
+  a:active,
+  a:focus {
+    color: #666666;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  /* Common styles for headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #888888;
+    margin: 0 0 15px 0;
+    padding: 0;
+  }
+  
+  h4, h5, h6 {
+    font-weight: 400;
+  }
+  
+  /**************************************/
+  /********** Back to Top CSS ***********/
+  /**************************************/
+  /* Styles for the "Back to Top" button */
+  .back-to-top {
+    position: fixed;
+    display: none;
+    background: #4f84c4;
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 1;
+    font-size: 44px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.3s;
+    z-index: 9;
+  }
+  
+  .back-to-top i {
+    color: #ffffff;
+  }
+  
+  /* Styles for the header image */
+  .headimg {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    height: auto; /* Ensure the header image scales properly */
+    background-image: url("img/logo21.png");
+    background-size: cover;
+  }
+  
+  /**************************************/
+  /************** Nav CSS ***************/
+  /**************************************/
+  /* Styles for the navigation bar */
+  #nav {
+    width: 100%;
+    height: 54px;
+    text-align: center;
+  }
+  
+  /* Styles for the navigation links */
+  .nav-item {
+    color: #000000;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+  }
+  
+  /**************************************/
+  /************ Header CSS **************/
+  /**************************************/
+  /* Styles for the header section */
+  .header {
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    margin-top: 10px;
+    padding: 0; /* Remove padding to make the header image full-width */
+  }
+  
+  /* Responsive adjustments for the carousel */
+  .carousel {
+    height: auto;
+  }
+  
+  .carousel-caption {
+    text-align: left;
+    bottom: 270px;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 30px; /* Reduce font size for smaller screens */
+  }
+  
+  .carousel-caption p {
+    font-size: 16px; /* Reduce font size for smaller screens */
+    width: 90%; /* Adjust the width for smaller screens */
+    margin: auto;
+    line-height: 1.6;
+  }
+  
+  /* Styles for the navbar in smaller screens */
+  @media screen and (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-link {
+      font-size: 16px; /* Reduce font size for smaller screens */
+    }
+  }
+  
